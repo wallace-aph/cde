@@ -1,0 +1,144 @@
+!!
+!! Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+!! Use is subject to license terms.
+!!
+!! ident "@(#)styleModern	1.11	06/04/17 SMI"
+!!
+
+#if defined(COLOR)
+
+Dtlogin*foreground:		white
+Dtlogin*background:		#35556b
+Dtlogin*XmTextField*foreground:	black
+Dtlogin*XmTextField*background:	white
+Dtlogin*highlightColor:		#88d3d0
+Dtlogin*highlightThickness:	2
+
+Dtlogin*options_button.background:	#3a5d75
+
+Dtlogin*labelFont:     -dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*textFont:      -dt-interface user-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*fontList:      -dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*dt_label.fontList:      -dt-interface system-medium-r-normal-s*-*-*-*-*-*-*-*-*:
+Dtlogin*options_button.fontList: -dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*login_label.fontList:      -dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*login_text.fontList:      -dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*passwd_text.fontList:      -dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:
+Dtlogin*greeting.fontList: -dt-interface system-medium-r-normal-l*-*-*-*-*-*-*-*-*:
+Dtlogin*ok_button.fontList: -dt-interface system-medium-r-normal-l*-*-*-*-*-*-*-*-*:
+
+#ifndef PIXMAPDIR
+#define PIXMAPDIR /usr/dt/config/images
+#endif
+
+!! Use new-style backdrop centered in table widget?
+Dtlogin.newBackdrop:			True
+
+!! Show error messages in dialog box (True) or under prompt area (False)?
+Dtlogin.errorsInDialog:			False
+
+!! Show logo on right for Solaris/session type?
+Dtlogin.showLogo:			False
+
+!! Don't force buttons to be evenly spaced & in particular order
+Dtlogin*forceButtonLayout:	False
+
+!! Show extra image (Sun Logo) in top-left corner of screen
+Dtlogin.showTableLogo:			True
+Dtlogin*table_logo.labelPixmap:		PIXMAPDIR/sunLogo.pm
+Dtlogin*table_logo.x:			20
+Dtlogin*table_logo.y:			20
+
+!! Backdrop area
+Dtlogin*matte.resizable:		False
+Dtlogin*matte.shadowThickness:		0
+
+Dtlogin*matte1.width:			1024
+Dtlogin*matte1.height:			 768
+Dtlogin*matte1.resizable:		False
+Dtlogin*matte1.backgroundPixmap:	PIXMAPDIR/CoolStart-backdrop.pm.gz
+
+Dtlogin*matteFrame.width:		1024
+Dtlogin*matteFrame.height:		 768
+Dtlogin*matteFrame.resizable:		False
+Dtlogin*matteFrame.shadowThickness:	0
+
+!! "Welcome to _____" message
+Dtlogin*greeting.leftOffset:	        192
+Dtlogin*greeting.bottomOffset:		414
+
+dtchooser*greeting.leftOffset:	        180
+dtchooser*greeting.bottomOffset:	480
+
+Dtlogin*greeting.topAttachment:		attach_none
+Dtlogin*greeting.leftAttachment:	attach_form
+Dtlogin*greeting.bottomAttachment:	attach_form
+Dtlogin*greeting.rightAttachment:	attach_none
+Dtlogin*greeting.highlightThickness:	0
+Dtlogin*greeting.alignment:		alignment_beginning
+
+!! Login area
+Dtlogin*login_form.topOffset:		420
+Dtlogin*login_form.bottomOffset:	54
+Dtlogin*login_form.leftOffset:		200
+Dtlogin*login_form.rightOffset:		200
+
+Dtlogin*login_form.topAttachment:	attach_form
+
+Dtlogin*login_text.leftAttachment:	attach_form
+Dtlogin*login_text.rightAttachment:	attach_form
+Dtlogin*login_text.bottomAttachment:	attach_none
+
+Dtlogin*passwd_text.leftAttachment:	attach_form
+Dtlogin*passwd_text.rightAttachment:	attach_form
+Dtlogin*passwd_text.bottomAttachment:	attach_none
+
+!! Session type/error messages
+!! offset from bottom of login form
+Dtlogin*dt_label.height:		20
+Dtlogin*dt_label.topOffset:		10
+Dtlogin*dt_label.topWidget:		login_form
+Dtlogin*dt_label.bottomAttachment:	attach_none
+Dtlogin*dt_label.highlightThickness:	0
+
+!! Buttons below login area
+Dtlogin*ok_button.rightOffset:		180
+Dtlogin*help_button.leftOffset:		186
+
+Dtlogin*ok_button.bottomOffset:		212
+Dtlogin*clear_button.bottomOffset:	212
+Dtlogin*options_button.bottomOffset:	218
+Dtlogin*help_button.bottomOffset:	212
+
+!! Don't force buttons to be evenly spaced & in particular order
+Dtlogin*forceButtonLayout:	False
+
+Dtlogin*ok_button.rightAttachment:	attach_form
+Dtlogin*clear_button.rightAttachment:	attach_widget
+Dtlogin*clear_button.rightWidget:	ok_button
+Dtlogin*clear_button.rightOffset:	4
+Dtlogin*help_button.leftAttachment:	attach_form
+Dtlogin*options_button.leftAttachment:	attach_widget
+Dtlogin*options_button.leftWidget:	help_button
+Dtlogin*options_button.leftOffset:	4
+
+Dtlogin*ok_button.bottomAttachment:	attach_form
+Dtlogin*clear_button.bottomAttachment:	attach_form
+Dtlogin*options_button.bottomAttachment:	attach_form
+Dtlogin*help_button.bottomAttachment:	attach_form
+
+!! Customize look of Options menu
+Dtlogin*XmToggleButtonGadget*indicatorType:	one_of_many_diamond
+Dtlogin*XmToggleButtonGadget*indicatorSize:	10
+Dtlogin*XmToggleButtonGadget*selectColor:	#ffffff
+Dtlogin*XmToggleButtonGadget*detailShadowThickness: 0
+Dtlogin*XmCascadeButtonGadget*cascadePixmap:	PIXMAPDIR/right-arrow.pm
+Dtlogin*options_button.cascadePixmap:	PIXMAPDIR/down-arrow.pm
+
+!! Remote login host chooser
+Dtlogin*chooser_listSW.background:	#496c82
+Dtlogin*chooser_listSW.leftOffset:	180
+Dtlogin*chooser_listSW.rightOffset:	180
+Dtlogin*list_head.leftOffset:		182
+
+#endif

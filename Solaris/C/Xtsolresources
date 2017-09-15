@@ -1,0 +1,34 @@
+!!######################################################################
+!!
+!! Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+!! Use is subject to license terms.
+!!
+!!	 @(#)Xtsolresources.src	1.9 07/01/08 SMI
+!!
+!! X Resources for Trusted Extensions. It defines two
+!! multilevel desktops (CDE, GNOME).
+!! The default is Trusted Extensions JDS. 
+!!
+!! Also sets the login logo to Trusted Extensions.
+!!
+!!######################################################################
+
+
+
+Dtlogin*matte1.backgroundPixmap: /usr/dt/config/images/tsol-CoolStart-backdrop.pm.gz
+
+Dtlogin*altDts:		2
+
+Dtlogin*altDtName1:     Solaris Trusted Extensions (JDS)
+Dtlogin*altDtKey1: 	/usr/bin/metacity
+Dtlogin*altDtStart1: 	/usr/dt/config/Xsession.tjds
+Dtlogin*altDtLogo1:  	TrustedDtLogo
+
+Dtlogin*altDtName2:     Solaris Trusted Extensions (CDE)
+Dtlogin*altDtKey2:      /usr/dt/bin/tsoldtwm
+Dtlogin*altDtStart2:    /usr/dt/bin/Xtsolsession
+Dtlogin*altDtLogo2:     tsol-Dtlogo
+
+!! Idle Timeout for Dtlogin (in seconds)
+Dtlogin*idleTime:	60
+

@@ -1,0 +1,6 @@
+Dtlogin*altDtsIncrement:	True
+
+Dtlogin*altDtName:	Java Desktop System, Release 3
+Dtlogin*altDtKey: 	/usr/bin/gnome-session 
+Dtlogin*altDtStart: 	/usr/dt/config/Xsession.jds
+Dtlogin*altDtLogo:	JDS_s10
